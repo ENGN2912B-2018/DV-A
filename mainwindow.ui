@@ -1,12 +1,13 @@
- version="4.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1166</width>
-    <height>648</height>
+    <width>1140</width>
+    <height>917</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,66 +17,85 @@
    <widget class="QLineEdit" name="SearchEdit">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>90</y>
+      <x>130</x>
+      <y>30</y>
       <width>371</width>
       <height>41</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QPushButton" name="SearchButton">
-    <property name="enabled">
-     <bool>false</bool>
+    <property name="text">
+     <string/>
     </property>
+   </widget>
+   <widget class="QRadioButton" name="NameButton">
     <property name="geometry">
      <rect>
-      <x>640</x>
+      <x>660</x>
+      <y>10</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AddressButton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>40</y>
+      <width>115</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ShowLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
       <y>90</y>
-      <width>201</width>
+      <width>591</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/map.jpg);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SearchButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>30</y>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>&amp;Search</string>
-    </property>
-    <property name="default">
-     <bool>true</bool>
+     <string>Search</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="SearchResults">
+   <widget class="QLabel" name="ListLabel">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>190</y>
-      <width>591</width>
-      <height>411</height>
+      <x>670</x>
+      <y>100</y>
+      <width>461</width>
+      <height>671</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QRadioButton" name="MapButton">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>160</y>
-      <width>115</width>
-      <height>19</height>
-     </rect>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
-     <string>Map</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="ListButton">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>160</y>
-      <width>115</width>
-      <height>19</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>List</string>
+     <string/>
     </property>
    </widget>
   </widget>
@@ -84,7 +104,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1166</width>
+     <width>1140</width>
      <height>26</height>
     </rect>
    </property>
@@ -101,43 +121,9 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>SearchEdit</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>enableSearchButton(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>497</x>
-     <y>144</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>913</x>
-     <y>125</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>SearchButton</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>search()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>767</x>
-     <y>151</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>925</x>
-     <y>174</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>enableSearchButton(QString)</slot>
   <slot>search()</slot>
  </slots>
 </ui>
-
