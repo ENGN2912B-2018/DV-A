@@ -93,7 +93,7 @@ The “Map” Button is the button to show the matching result on a map.  Of cou
 
 #Testing and Evaluation:
 
-Our application will be shown on the final visualizing graph, the testing is all done through typing in the search content and click on search mode and check the results. One thing to note: before launching the application, please adapt the path to restaurant.csv (the function is in the dataprocessing.cpp). Otherwise, the program can't find the data file. 
+Our application will be shown on the final visualizing graph, the testing is all done through typing in the search content and click on search mode and check the results. The application can be totally run on Qt Creator. One thing to note: before launching the application, please adapt the path to restaurant.csv (the function is in the dataprocessing.cpp). Otherwise, the program can't find the data file. 
 
 After launching this app, you will see a new window with a search bar on top and two search mode you can choose: name and address. After typing in search content(e.g. east), click the search button. On the bottom list will display search results(e.g. East Side Pockets...) with name, address, average stars rated by customers, etc. The match is based on restaurant's name or address and is case insensitive. If you click the 'map' button, a new window will display the location of search results on the Providence map. If there's no match, the list will display "No results".
 
