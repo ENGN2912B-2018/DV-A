@@ -62,7 +62,7 @@ The final application is designed and run on Qt. It contains three functional mo
 
 ##3. Data Flow Diagrams
 
-![Data Flow Diagram](https://github.com/ENGN2912B-2018/DV-A/blob/master/update3/FunctionDiagram.jpg)
+![Data Flow Diagram](https://github.com/ENGN2912B-2018/DV-A/blob/master/update3/DataFlowDiagram.jpg)
 
 
 
